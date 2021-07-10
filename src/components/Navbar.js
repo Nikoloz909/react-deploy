@@ -9,17 +9,17 @@ export default function Navbar() {
     return (
         <>
         <Router>
-         <div className='navbar-header d-flex container'>
+         <header className='navbar-header d-flex container'>
             <div className="logo-header d-flex" >
             <Link to="/">
                 <img className='logo' src={logo}  alt="logo"/>
             </Link>
                 <p className='header-title'>Build Software to Test Software</p>
             </div>
-                <nav className='navbar'>
+            <nav className='navbar'>
                 <ul className='navbar-ul d-flex'>
                     <li className='navbar-li'>
-                        <Link to="javascript:void(0)"> <i className="fas fa-search "></i>search</Link>
+                        <Link to="javascript:void(0)" > <i className="fas fa-search "></i>search</Link>
                     </li>
                     <li className='navbar-li'>
                         <Link to="javascript:void(0)">@ subscribe</Link>
@@ -28,8 +28,9 @@ export default function Navbar() {
                         <Link to="javascript:void(0)"> <i className="fas fa-envelope"></i>Contact us</Link>
                     </li>
                 </ul>
+                <button className='navbar-btn'> <i className="fas fa-bars"></i>menu</button>
             </nav>
-         </div>
+         </header>
         </Router>
         </>
     )
