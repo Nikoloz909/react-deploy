@@ -1,23 +1,13 @@
-import logo from './logo.svg';
+/* eslint-disable jsx-a11y/img-redundant-alt */
+import sectionimage from './img/size_p_5_0.jpg';
 import './App.css';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>my react app</h1>
+      <h2>authot: niko niko</h2>
+      <img className='section-bg' src={sectionimage} alt="section-image" />
     </div>
   );
 }
