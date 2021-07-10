@@ -1,11 +1,15 @@
 /* eslint-disable no-script-url */
 import React from 'react'
 import logo from '../img/logo.svg'
+import FormTest from './FormTest';
 import {
     BrowserRouter as Router, Link} from "react-router-dom";
 
 export default function Navbar() {
-
+        function onClick(){
+           
+           
+        }
     return (
         <>
         <Router>
@@ -28,7 +32,7 @@ export default function Navbar() {
                         <Link to="javascript:void(0)"> <i className="fas fa-envelope"></i>Contact us</Link>
                     </li>
                 </ul>
-                <button className='navbar-btn'> <i className="fas fa-bars"></i>menu</button>
+                <button className='navbar-btn' onClick={onClick}> <i className="fas fa-bars"></i>menu</button>
             </nav>
          </header>
         </Router>
